@@ -1,0 +1,184 @@
+<h1 style="color: red"><i>Human/AI image seperation test</i></h1>
+<p>Select item(z) that are made by a human being.</p>
+<script>
+	function random2(var1,var2)
+	{
+		return Math.floor((Math.random() * (var2-(var1-1))) + var1);
+	}
+	var lizt28=[];
+	addme1();
+	addme2();
+	addme3();
+	document.body.innerHTML+="<button onclick='finalfunc69();' style='font-size:32px;color:red'>Tezt</button><h1 id='finalsoss'></h1>";
+	function finalfunc69()
+	{
+		var goodonez;
+		goodonez=0;
+		var maxitemz;
+		maxitemz=3;
+		for (var i4 = 0; i4 < 6; i4++)
+		{
+			//alert(document.getElementById("rdm"+(i4+1).toString())==null);
+			if(document.getElementById("rdm"+(i4+1).toString()).checked)
+			{
+				if(i4+1!=lizt28[0])
+				{
+				document.getElementById("rdm"+(i4+1).toString()).style="outline:6px solid red";
+				}
+				else
+				{
+				document.getElementById("rdm"+(i4+1).toString()).style="outline:6px solid green";
+				goodonez+=1;
+				}
+				}
+			else
+			{
+				document.getElementById("rdm"+(i4+1).toString()).style="";
+			}
+			if(document.getElementById("rdmmm"+(i4+1).toString()).checked)
+			{
+				if(i4+1!=lizt28[1])
+				{
+				document.getElementById("rdmmm"+(i4+1).toString()).style="outline:6px solid red";
+				}
+				else
+				{
+				document.getElementById("rdmmm"+(i4+1).toString()).style="outline:6px solid green";
+				goodonez+=1;
+				}
+				}
+			else
+			{
+				document.getElementById("rdmmmmm"+(i4+1).toString()).style="";
+			}
+			if(document.getElementById("rdmmmmm"+(i4+1).toString()).checked)
+			{
+				if(i4+1!=lizt28[2])
+				{
+				document.getElementById("rdmmmmm"+(i4+1).toString()).style="outline:6px solid red";
+				}
+				else
+				{
+				document.getElementById("rdmmmmm"+(i4+1).toString()).style="outline:6px solid green";
+				goodonez+=1;
+				}
+				}
+			else
+			{
+				document.getElementById("rdmmmmm"+(i4+1).toString()).style="";
+			}
+		}
+		if(goodonez/maxitemz>0.5)
+		{
+		if(goodonez/maxitemz>0.75)
+		{
+		document.getElementById("finalsoss").style="color: green";
+		}
+		else
+		{
+		document.getElementById("finalsoss").style="color: orange";
+		}
+		}
+		else
+		{
+		document.getElementById("finalsoss").style="color: red";
+		}
+		document.getElementById("finalsoss").innerHTML=((goodonez/maxitemz)*100).toString()+"%";
+		
+	}
+	function addme1()
+	{
+	var rand69;
+	rand69=random2(1,6);
+	for (var i = 0; i < 6; i++)
+	{
+		if(rand69!==i+1)
+		{
+		var rand78;
+		rand78=random2(1,24);
+		document.body.innerHTML+="<img src='animeilluzt/2/gen/"+rand78.toString()+".png'></img>";
+		}
+		else
+		{
+		var rand81;
+		rand81=random2(1,4);
+		document.body.innerHTML+="<img src='animeilluzt/2/orig/"+rand81.toString()+".png'></img>";
+		lizt28.push((i+1).toString());
+		}
+	}
+	document.body.innerHTML+="<br>";
+	for (var i3 = 0; i3 < 6; i3++)
+	{
+		document.body.innerHTML+="<input type='radio' name='rdd01' id='rdm"+(i3+1).toString()+"'></input>"
+		for (var i8 = 0; i8 < 58; i8++)
+		{
+			document.body.innerHTML+="\xa0";
+		}
+	}
+	document.body.innerHTML+="<br>";
+	}
+	
+	function addme2()
+	{
+	var rand693;
+	rand693=random2(1,6);
+	for (var i3 = 0; i3 < 6; i3++)
+	{
+		if(rand693!==i3+1)
+		{
+		var rand783;
+		rand783=random2(1,56);
+		document.body.innerHTML+="<img src='animeilluzt/3/gen/"+rand783.toString()+".png'></img>";
+		}
+		else
+		{
+		var rand813;
+		rand813=random2(1,14);
+		document.body.innerHTML+="<img src='animeilluzt/3/orig/"+rand813.toString()+".png'></img>";
+		lizt28.push((i3+1).toString());
+		}
+	}
+	document.body.innerHTML+="<br>";
+	for (var i33 = 0; i33 < 6; i33++)
+	{
+		document.body.innerHTML+="<input type='radio' name='rdd02' id='rdmmm"+(i33+1).toString()+"'></input>"
+		for (var i83 = 0; i83 < 58; i83++)
+		{
+			document.body.innerHTML+="\xa0";
+		}
+	}
+	document.body.innerHTML+="<br>";
+	}
+	
+	function addme3()
+	{
+	var rand696;
+	rand696=random2(1,6);
+	for (var i4 = 0; i4 < 6; i4++)
+	{
+		if(rand696!==i4+1)
+		{
+		var rand786;
+		rand786=random2(1,7);
+		document.body.innerHTML+="<img src='animeilluzt/4/gen/"+rand786.toString()+".jpg' style='width: 256px'></img>";
+		}
+		else
+		{
+		var rand816;
+		rand816=random2(1,4);
+		document.body.innerHTML+="<img src='animeilluzt/4/orig/"+rand816.toString()+".jpg' style='width: 256px'></img>";
+		lizt28.push((i4+1).toString());
+		}
+	}
+	document.body.innerHTML+="<br>";
+	for (var i36 = 0; i36 < 6; i36++)
+	{
+		document.body.innerHTML+="<input type='radio' name='rdd03' id='rdmmmmm"+(i36+1).toString()+"'></input>"
+		for (var i86 = 0; i86 < 58; i86++)
+		{
+			document.body.innerHTML+="\xa0";
+		}
+	}
+	document.body.innerHTML+="<br>";
+	}
+   </script>
